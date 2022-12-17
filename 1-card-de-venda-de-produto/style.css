@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-dark-cyan: hsl(158, 36%, 37%);
+    --color-cream: hsl(30, 38%, 92%);
+    --color-very-dark-blue: hsl(212, 21%, 14%);
+    --color-dark-grayish-blue: hsl(228, 12%, 48%);
+    --color-white: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--color-cream);    
+}
+
+.card {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--color-white);
+    max-width: 300px;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card .body {
+    padding: 20px;
+}
+
+.card .tag {
+    text-transform: uppercase;
+    color: var(--color-dark-grayish-blue);
+}
+
+.card .title {
+    color: var(--color-very-dark-blue);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Fraunces', serif;
+}
+
+.card .description {
+    color: var(--color-dark-grayish-blue);
+    font-size: 14px;
+}
+
+.card .price-info {
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.card .price-info span {
+    vertical-align: middle;
+    font-family: 'Fraunces', serif;
+}
+
+.card .price {
+    font-size: 24px;
+    color: var(--color-dark-cyan)
+}
+
+.card .price-old {
+    font-size: 12px;
+    margin-left: 10px;
+    color: var(--color-dark-grayish-blue);
+    text-decoration: line-through;
+}
+
+.card button {
+    width: 100%;
+    background-color: var(--color-dark-cyan);
+    color: var(--color-white);
+    border: none;
+    border-radius: 5px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.card button * {
+    vertical-align: middle;
+}
+
+.card button img {
+    width: 15px;
+}
+
+@media (width > 600px) {
+    .card {
+        display: flex;        
+    }
+
+    .card {
+        max-width: 600px;
+    }
+
+    .card picture {
+        width: 50%;
+    }
+
+    .card .body {
+        width: 50%;
+        padding: 40px;
+    }
+
+    .card picture img {
+        border-radius: 5px 0 0 5px;
+        height: 100%;
+    }
+
+    .card .title {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    .card .price-info {
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+}
+
