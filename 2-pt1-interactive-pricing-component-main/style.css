@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --color-soft-cyan: hsl(174, 77%, 80%);
+  --color-strong-cyan: hsl(174, 86%, 45%);
+  --dark-desaturated-blue: hsl(227, 35%, 25%);
+}
+
+body {
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    color: gray;
+}
+
+.cabecalho {
+    background-image: url(images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    height: 150px;
+}
+
+.cabecalho h1 {
+    margin-bottom: 20px;
+    color: var(--dark-desaturated-blue);
+}
+
+.formulario {
+    background-color: white;
+    border-radius: 5px;
+    padding: 40px 20px;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.05);
+}
+
+.formulario h2, .beneficios, .range-pageviews, .price, .periodo, .separador {
+    margin-bottom: 20px;
+}
+
+.formulario h2 {
+    text-transform: uppercase;
+}
+
+.container {
+    margin: 30px 5%;
+    text-align: center;
+}
+
+.range-pageviews {
+    appearance: none;
+    background-color: rgb(240, 240, 240);
+    background-image: linear-gradient(var(--color-soft-cyan),var(--color-soft-cyan));
+    background-size: 70% 100%;
+    background-repeat: no-repeat;
+    height: 5px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.range-pageviews::-webkit-slider-thumb {
+    appearance: none;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-color: var(--color-strong-cyan);
+    background-position: 50%;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.price span {
+    font-size: 48px;
+    color: var(--dark-desaturated-blue);
+}
+
+.periodo input {
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: lightgray;
+    border-radius: 25px;
+    padding: 5px;
+    transition: padding-left 0.5s ease-in-out;
+}
+
+.periodo input::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.periodo input:checked {
+    background-color: var(--color-strong-cyan);
+    padding-left: 30px;
+}
+
+.beneficios {
+    list-style-image: url(images/icon-check.svg);
+    list-style-position: inside;
+}
+
+.desconto {
+    background-color: rgb(255, 233, 192);
+    color: orange;
+    border-radius: 20px;
+    padding: 2px 5px;
+    font-weight: bold;
+}
+
+.start {
+    width: 100%;
+    height: 50px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--dark-desaturated-blue);
+    color: white;
+}
+
+@media (width > 600px) {
+    body {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+}
