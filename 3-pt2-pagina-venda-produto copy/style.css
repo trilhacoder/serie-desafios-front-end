@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --color-orange: hsl(26, 100%, 55%);
+    --color-pale-orange: hsl(25, 100%, 94%);
+}
+
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.cabecalho {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.cabecalho .itens-esquerda, .cabecalho .itens-direira {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.cabecalho .avatar {    
+    width: 30px;
+}
+
+.galeria {
+    overflow-x: hidden;
+    position: relative;
+}
+
+.galeria .imagens {
+    display: flex;
+}
+
+.galeria .imagens li { 
+    list-style: none;
+}
+
+.galeria .imagens img {
+    width: 100vw;
+}
+
+.ir-esquerda {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    left: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.ir-direita {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: calc(50% - 20px);
+    right: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+
+.container {
+    padding: 20px;
+}
+
+.tag {
+    color: var(--color-orange);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.titulo {
+    margin-top: 20px;
+}
+
+.descricao {
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.info-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.info-preco .desconto {
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color-orange);
+}
+
+.info-preco .preco-cheio {
+    color: rgb(209, 208, 208);
+    text-decoration: line-through;
+}
+
+.info-preco .preco {
+    font-size: 32px;
+}
+
+.info-preco-desconto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-preco .desconto {
+    background-color: var(--color-pale-orange);
+}
+
+.quantidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.botaoAdicionarCarrinho {
+    background-color: var(--color-orange);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botaoAdicionarCarrinho svg path {
+    fill: #ffffff;
+}
+
+.tag, .info-preco .desconto, 
+.info-preco .preco-cheio,
+.info-preco .preco,
+.botaoAdicionarCarrinho {
+  font-weight: bold;
+}
