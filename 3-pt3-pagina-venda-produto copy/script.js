@@ -42,9 +42,17 @@ $iconeFecharMenu.addEventListener("click", function() {
     $menuNavegacao.classList.toggle("active")
 })
 
+document.querySelector("#quantidade-mais").addEventListener("click", function() {
+    console.log("mais")
+    let $quantidade = document.querySelector("#quantidade")
+    $quantidade.textContent = Number($quantidade.textContent) + 1
+})
 
-/*
-.fundo-cinza, .menu-navegacao {
-    visibility: hidden;
-}
-*/
+document.querySelector("#quantidade-menos").addEventListener("click", function() {
+    console.log("menos")
+    let $quantidade = document.querySelector("#quantidade")
+    let quantidadeNumber = Number($quantidade.textContent)
+    if ( quantidadeNumber > 0) {
+        $quantidade.textContent = quantidadeNumber - 1
+    }
+})
