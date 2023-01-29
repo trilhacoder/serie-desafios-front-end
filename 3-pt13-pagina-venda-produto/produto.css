@@ -1,0 +1,92 @@
+.container {
+    padding: 20px;
+}
+
+.tag {
+    color: var(--color-orange);
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.titulo {
+    margin-top: 20px;
+}
+
+.descricao {
+    color: rgb(161, 161, 161);
+    font-weight: bold;
+    margin-top: 20px;
+    
+}
+
+.info-preco {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.info-preco .desconto {
+    padding: 5px;
+    border-radius: 5px;
+    color: var(--color-orange);
+}
+
+.info-preco .preco-cheio {
+    color: rgb(209, 208, 208);
+    text-decoration: line-through;
+}
+
+.info-preco .preco {
+    font-size: 32px;
+}
+
+.info-preco-desconto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-preco .desconto {
+    background-color: var(--color-pale-orange);
+}
+
+.quantidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f7f7f7;
+    height: 50px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.botaoAdicionarCarrinho {
+    background-color: var(--color-orange);
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.botaoAdicionarCarrinho svg path {
+    fill: #ffffff;
+}
+
+.tag, .info-preco .desconto, 
+.info-preco .preco-cheio,
+.info-preco .preco,
+.botaoAdicionarCarrinho {
+  font-weight: bold;
+}
