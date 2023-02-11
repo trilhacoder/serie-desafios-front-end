@@ -1,0 +1,22 @@
+.botao {    
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.botao--primary {
+    background-color: var(--color-orange);
+}
+
+.botao__icone path {
+    fill: #ffffff;
+}
+
+.botao__texto {
+    color: #ffffff;
+}
